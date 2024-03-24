@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from gymove.dexignzone.com/xhtml/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 07:20:58 GMT -->
+<head>
+     
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Form step -->
+    <link href="<?php echo base_url('vendor/jquery-smartwizard/dist/css/smart_wizard.min.css')?>" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+	<link href="<?php echo base_url('vendor/bootstrap-select/dist/css/bootstrap-select.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('css/style.css')?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+</head><!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                 
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Edit Customer</h4>
+                            </div>
+                            <div class="card-body">
+								<div id="smartwizard" class="form-wizard order-create">
+									<ul class="nav nav-wizard">
+										<li><a class="nav-link" href="#Personal_Details"> 
+											<span>1</span> 
+										</a></li>
+										<li><a class="nav-link" href="#Branch_Details">
+											<span>2</span>
+										</a></li>
+										<li><a class="nav-link" href="#Medical_Details">
+											<span>3</span>
+										</a></li>
+										<li><a class="nav-link" href="#Medical_Details1">
+											<span>4</span>
+										</a></li>
+										
+									</ul>
+									<form action="<?php echo base_url('/GymCustomer/Update')?>" method="POST" enctype="multipart/form-data">
+									<div class="tab-content">
+										<div id="Personal_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="form-group col-md-4">
+													<label>ID</label>
+													<input type="text" readonly name="id" id="id" class="form-control" value="<?php echo $editData['id'];?>" >
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Customer Name</label>
+														<input type="text" name="customername" id="customername" class="form-control" value="<?php echo $editData['customername'];?>">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+											 <div class="col-lg-4 mb-2">
+													<label>Profile Image</label>
+													<input type="file"  class="form-control" id="customerimage" name="customerimage" placeholder=" Upload Image Here" style="width:100%;" value="<?php echo $editData['customerimage'];?>">
+													<a href="<?php echo base_url('images/upload/gymcustomer/').'/'.$editData['id'].'/'.$editData['customerimage']?>" style="color:#dec53c;" target="_blank">click here to view image</a>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Customer DOB</label>
+														<input type="date" class="form-control" name="date" id="date" value="<?php echo $editData['date'];?>">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+													<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Gender</label><br>
+															<select class="form-control" name="gender" id="gender">
+																<option value="select gender">Select Gender</option>
+																<option value="female" <?php if($editData['gender'] == "female"){ echo ' selected="selected"'; } ?>>Female</option>
+																<option value="male" <?php if($editData['gender'] == "male"){ echo ' selected="selected"'; } ?>>Male</option>
+															</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+													<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Phone Number</label>
+														<input type="text" name="phoneno" id="phoneno" class="form-control" value="<?php echo $editData['phoneno'];?>">
+													</div>
+												</div>
+											
+											</div>
+											<div class="row">
+													<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Email</label>
+														<input type="email" name="email" id="email" class="form-control" value="<?php echo $editData['email'];?>">
+														
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Address</label>
+														<input type="text" name="address" id="address" class="form-control" value="<?php echo $editData['address'];?>">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+													<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">City</label>
+														<input type="text" name="city" id="city" class="form-control" value="<?php echo $editData['city'];?>">
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Occupation</label>
+														<input type="text" name="occupation" id="occupation" class="form-control" value="<?php echo $editData['occupation'];?>">
+													</div>
+												</div>
+											</div>
+											 
+										</div>
+									 
+										<div id="Branch_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Branch Name</label>
+														<select class="form-control" data-placeholder="Enter Branch Name" tabindex="1" id=" branchname"  name="branchname" >
+                                                       <option value="">Select Branch Name</option>
+														<?php foreach($branchData as $row):
+														if ($row['branchname'] == $editData['branchname'])
+															{
+																echo'<option value="'.$row['branchname'].'" selected="selected"> '.$row['branchname'].'</option>';
+																
+																}
+														else
+														{
+															echo'<option value="'.$row['branchname'].'"> '.$row['branchname'].'</option>';
+														}
+														
+                                                        endforeach;
+														?>
+                                                     </select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Instructor Name</label>
+														<select class="form-control" name="instructorname" id="instructorname">
+																<option value="select instructor name">Select Instructor Name</option>
+																<?php foreach($employeeData as $row):
+																	if ($row['employeename'] == $editData['instructorname'])
+																		{
+																			echo'<option value="'.$row['employeename'].'" selected="selected"> '.$row['employeename'].'</option>';
+																			
+																			}
+																	else
+																	{
+																		echo'<option value="'.$row['employeename'].'"> '.$row['employeename'].'</option>';
+																	}
+																	
+																	endforeach;
+																?>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label"> Program Time</label>
+														<select class="form-control" name="programtime" id="programtime">
+																<option value="select program time">Select Program Time</option>
+																<option value="morning" <?php if($editData['programtime'] == "morning"){ echo ' selected="selected"'; } ?>>Morning</option>
+																<option value="evening" <?php if($editData['programtime'] == "evening"){ echo ' selected="selected"'; } ?>>Evening</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Joining Date</label>
+														<input type="date" name="joindate" id="joindate" class="form-control" value="<?php echo $editData['joindate'];?>">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Place</label>
+														<input type="text" name="place" id="place" class="form-control" value="<?php echo $editData['place'];?>"> 
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Membership</label>
+														<select class="form-control" name="member" id="member">
+																<option value="select membership">Select Membership</option>
+																<option value="member" <?php if($editData['member'] == "member"){ echo ' selected="selected"'; } ?>>Member</option>
+																<option value="customer" <?php if($editData['member'] == "customer"){ echo ' selected="selected"'; } ?>>Customer</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Program Joined For</label>
+														<select class="form-control" data-placeholder="Enter Company Name" tabindex="1" id="programname"  name="programname" >
+                                                       <option value="">Select Program Joined For</option>
+														<?php foreach($programData as $row):
+														if ($row['programname'] == $editData['programname'])
+															{
+																echo'<option value="'.$row['programname'].'" selected="selected"> '.$row['programname'].'</option>';
+																
+																}
+														else
+														{
+															echo'<option value="'.$row['programname'].'"> '.$row['programname'].'</option>';
+														}
+														
+                                                        endforeach;
+														?>
+                                                     </select>			 
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Package Joined For</label>
+													
+														<select class="form-control" name="package" id="package">
+																<option value="select package joined for">Select Package Joined For</option>
+																 
+																<option value="1 Month" <?php if($editData['package'] == "1 Month"){ echo   ' selected="selected"'; } ?>>1 Month</option>
+																<option value="2 Month" <?php if($editData['package'] == "2 Month"){ echo   ' selected="selected"'; } ?>>2 Month</option>
+																<option value="3 Month" <?php if($editData['package'] == "3 Month"){ echo   ' selected="selected"'; } ?>>3 Month</option>
+																<option value="4 Month" <?php if($editData['package'] == "4 Month"){ echo   ' selected="selected"'; } ?>>4 Month</option>
+																<option value="5 Month" <?php if($editData['package'] == "5 Month"){ echo   ' selected="selected"'; } ?>>5 Month</option>
+																<option value="6 Month" <?php if($editData['package'] == "6 Month"){ echo   ' selected="selected"'; } ?>>6 Month</option>
+																<option value="7 Month" <?php if($editData['package'] == "7 Month"){ echo   ' selected="selected"'; } ?>>7 Month</option>
+																<option value="8 Month" <?php if($editData['package'] == "8 Month"){ echo   ' selected="selected"'; } ?>>8 Month</option>
+																<option value="9 Month" <?php if($editData['package'] == "9 Month"){ echo   ' selected="selected"'; } ?>>9 Month</option>
+																<option value="10 Month" <?php if($editData['package'] == "10 Month"){ echo ' selected="selected"'; } ?>>10 Month</option>
+																<option value="11 Month" <?php if($editData['package'] == "11 Month"){ echo ' selected="selected"'; } ?>>11 Month</option>
+																<option value="12 Month" <?php if($editData['package'] == "12 Month"){ echo ' selected="selected"'; } ?>>12 Month</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Status</label>
+														<select class="form-control" name="status" id="status">
+																<option value="select status">Select Status</option>
+																<option value="active" <?php if($editData['status'] == "active"){ echo ' selected="selected"'; } ?>>Active</option>
+																<option value="inactive" <?php if($editData['status'] == "inactive"){ echo ' selected="selected"'; } ?>>Inactive</option>
+																 </select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">References</label>
+														<select class="form-control" name="reference" id="reference">
+																<option value="select references">Select References</option>
+																<option value="articles" <?php if($editData['reference'] == "articles"){ echo ' selected="selected"'; } ?>>Articles</option>
+																<option value="websites" <?php if($editData['reference'] == "websites"){ echo ' selected="selected"'; } ?>>Websites</option>
+																<option value="social media" <?php if($editData['reference'] == "social media"){ echo ' selected="selected"'; } ?>>Social Media</option>
+																<option value="other" <?php if($editData['reference'] == "other"){ echo ' selected="selected"'; } ?>>Other</option>
+														</select>
+													</div>
+												</div>
+												</div>
+											<br><br><br>
+										</div>
+										<div id="Medical_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Blood Group</label>
+														<input type="text" class="form-control" name="bloodgroup" id="bloodgroup" value="<?php echo $editData['bloodgroup'];?>">
+													</div>
+												</div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Height</label>
+														<input type="text" class="form-control" name="height" id="height" value="<?php echo $editData['height'];?>">
+													</div>
+												</div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Weight</label>
+														<input type="text" class="form-control" name="weight" id="weight" value="<?php echo $editData['weight'];?>">
+													</div>
+												</div>
+											</div>
+											<div class="row ">
+												<label class="text-label">1.Have you ever or do you have any of the following</label></div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" name="heart" value="Heart Disease" <?php if($editData['heart'] == "Heart Disease"){ echo ' checked="true"'; } ?>> 
+															<label class="form-check-label" for="check1">Heart Disease</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="asthma" name="asthma" value="Asthma"  <?php if($editData['asthma'] == "Asthma"){ echo ' checked="true"'; } ?> >
+															<label class="form-check-label" for="check2">Asthma</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="gout" name="gout" value="Gout"  <?php if($editData['gout'] == "Gout"){ echo ' checked="true"'; } ?> >
+															<label class="form-check-label" for="check3">Gout</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="cardio" name="cardio" value="Cardiovascular condition"  <?php if($editData['cardio'] == "Cardiovascular condition"){ echo ' checked="true"'; } ?> >
+															<label class="form-check-label" for="check1">Cardiovascular condition</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="pressure" name="pressure" value="High/Low Blood Pressure" <?php if($editData['pressure'] == "High/Low Blood Pressure"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check2">High/Low Blood Pressure</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="familyhx" name="familyhx" value="Family Hx of heart Disease" <?php if($editData['familyhx'] == "Family hx of heart Disease"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check3">Family Hx of heart Disease</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="dizziness" name="dizziness" value="Dizziness" <?php if($editData['dizziness'] == "Dizziness"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check1">Dizziness</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="arthritis" name="arthritis" value="Arthritis" <?php if($editData['arthritis'] == "Arthritis"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check2">Arthritis</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="infection" name="infection" value="Infectious Disease" <?php if($editData['infection'] == "Infectious Disease"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check3">Infectious Disease</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="blackouts" name="blackouts" value="Blackouts" <?php if($editData['blackouts'] == "Blackouts"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check1">Blackouts</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="diabetes" name="diabetes" value="Diabetes" <?php if($editData['diabetes'] == "Diabetes"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check2">Diabetes</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="fainting" name="fainting" value="Fainting" <?php if($editData['fainting'] == "Fainting"){ echo ' checked="true"'; } ?> >
+															<label class="form-check-label" for="check3">Fainting</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="fits" name="fits" value="Epilepsy/Fits" <?php if($editData['fits'] == "Epilepsy/Fits"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check1">Epilepsy/Fits</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="other" name="other" value="Other" <?php if($editData['other'] == "Other"){ echo ' checked="true"'; } ?>  >
+															<label class="form-check-label" for="check2">Other:</label>
+														</div>
+													</div>
+												</div>
+												<div class="row ">
+													<label class="text-label">2.Do you have any problems/injuries in the follow areas?(please tick and explain to the best of your ability)</label></div>
+													<div class="form-group">
+														<div class="row">
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="knees" name="knees" value="Knees" <?php if($editData['knees'] == "Knees"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check1">Knees</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="lowerback" name="lowerback" value="Lower Back" <?php if($editData['lowerback'] == "Lower Back"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check2">Lower Back</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="neck" name="neck" value="Neck/Shoulder" <?php if($editData['neck'] == "Neck/Shoulder"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check1">Neck/Shoulder</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="hips" name="hips" value="Hips/Pelvis" <?php if($editData['hips'] == "Hips/Pelvis"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check1">Hips/Pelvis</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="flexibility" name="flexibility" value="Flexibility" <?php if($editData['flexibility'] == "Flexibility"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check1">Flexibility</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="others" name="others" value="Others" <?php if($editData['others'] == "Others"){ echo ' checked="true"'; } ?> >
+																<label class="form-check-label" for="check1">Others</label>
+															</div>
+														</div>
+													</div>
+													<div class="row ">
+														<label class="text-label">3.Are you pregnant?</label></div>
+														<div class="form-group">
+															<div class="row">
+																<div class="form-check mb-2 col-md-3">
+																	<input type="checkbox" class="form-check-input" id="yes" name="yes" value="Yes" <?php if($editData['yes'] == "Yes"){ echo ' checked="true"'; } ?> >
+																	<label class="form-check-label" for="check1">Yes</label>
+																</div>
+																<div class="form-check mb-2 col-md-3">
+																	<input type="checkbox" class="form-check-input" id="no" name="no" value="No" <?php if($editData['no'] == "No"){ echo ' checked="true"'; } ?> >
+																	<label class="form-check-label" for="check1">No</label>
+																</div>
+															</div>
+														</div>
+														<div class="row ">
+															<label class="text-label">If Yes how many weeks</label></div>
+															<div class="form-group">
+																<div class="form-check mb-4 col-md-3">
+																	<input type="text" class="form-control" name="weeks" id="weeks" value="<?php echo $editData['weeks'];?>" >
+																</div>
+															</div>
+													</div>
+										  
+													<div id="Medical_Details1" class="tab-pane" role="tabpanel">
+														<div class="row ">
+															<label class="text-label">4. Are you currently doing any physical activity,what and how many times per week?</label></div>
+															<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control" name="physical" id="physical" value="<?php echo $editData['physical'];?>" >
+																</div>
+															</div>
+															<div class="row ">
+																<label class="text-label">5. Have you had surgery in the last 5 years,if yes,when and what?</label></div>
+															<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control"  name="surgery" id="surgery" value="<?php echo $editData['surgery'];?>">
+																</div>
+															</div>
+															<div class="row ">
+																<label class="text-label">6. Do you smoke,if yes how many per day,and for how long have you smoked?</label></div>
+															<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control"  name="smoke" id="smoke" value="<?php echo $editData['smoke'];?>">
+																</div>
+															</div>
+													<div class="row ">
+														<label class="text-label">7. Are you on any medication,if yes,what and when do you take?</label></div>
+													<div class="form-group">
+														<div class="form-check mb-6 col-md-8">
+															<input type="text" class="form-control"  name="medication" id="medication" value="<?php echo $editData['medication'];?>">
+														</div>
+													</div><br>
+											 <button type="submit" class="btn btn-primary" style="background:#dec53c;">Submit</button>
+										</div>
+									</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		</div>
+	</div>
+</html>
+         
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+       

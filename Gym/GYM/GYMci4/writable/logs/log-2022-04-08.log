@@ -1,0 +1,18 @@
+CRITICAL - 2022-04-08 07:57:19 --> Invalid file: Admin/headerAdmin1.php
+#0 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/headerAdm...')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/headerAdm...', Array, true)
+#2 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(67): view('Admin/headerAdm...')
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->listRecord()
+#4 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-08 08:02:01 --> Invalid file: Admin/headerAdmin1.php
+#0 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/headerAdm...')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/headerAdm...', Array, true)
+#2 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(67): view('Admin/headerAdm...')
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->listRecord()
+#4 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

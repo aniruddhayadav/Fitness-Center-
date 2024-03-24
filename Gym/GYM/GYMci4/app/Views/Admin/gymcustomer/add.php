@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from gymove.dexignzone.com/xhtml/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 07:20:58 GMT -->
+<head>
+     
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Form step -->
+    <link href="<?php echo base_url('vendor/jquery-smartwizard/dist/css/smart_wizard.min.css')?>" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+	<link href="<?php echo base_url('vendor/bootstrap-select/dist/css/bootstrap-select.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('css/style.css')?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+</head>
+<!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                 
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Add Customer</h4>
+                            </div>
+                            <div class="card-body">
+								<div id="smartwizard" class="form-wizard order-create">
+									<ul class="nav nav-wizard">
+										<li><a class="nav-link" href="#Personal_Details"> 
+											<span>1</span> 
+										</a></li>
+										<li><a class="nav-link" href="#Branch_Details">
+											<span>2</span>
+										</a></li>
+										<li><a class="nav-link" href="#Medical_Details">
+											<span>3</span>
+										</a></li>
+										<li><a class="nav-link" href="#Medical_Details1">
+											<span>4</span>
+										</a></li>
+										<li><a class="nav-link" href="#Fees_Details">
+											<span>5</span>
+										</a></li>
+									 </ul>
+									<form action="<?php echo base_url('/GymCustomer/save')?>" method="POST" enctype="multipart/form-data">
+									<div class="tab-content">
+										<div id="Personal_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Customer Name</label>
+														<input type="text" name="customername" id="customername" class="form-control"  required >
+													</div>
+												</div>
+												 <div class="col-lg-2 mb-2"></div>
+												 <div class="col-lg-4 mb-2">
+													<label>Profile Image</label>
+													<input type="file"  class="form-control" id="customerimage" name="customerimage" placeholder=" Upload Image Here" style="width:100%;" required >
+												</div>
+											</div>
+											<div class="row">
+												 <div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Customer DOB</label>
+														<input type="date" class="form-control" name="date" id="date" required >
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Gender</label><br>
+															<select class="form-control" name="gender" id="gender" required>
+																<option value="select gender">Select Gender</option>
+																<option value="female">Female</option>
+																<option value="male">Male</option>
+															</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Phone Number</label>
+														<input type="text" name="phoneno" id="phoneno" class="form-control" required >
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Aadhar Number</label>
+														<input type="text" name="aadharno" id="aadharno" class="form-control" required >
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Email</label>
+														<input type="email" name="email" id="email" class="form-control" required >
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Address</label>
+														<input type="text" name="address" id="address" class="form-control"  >
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Occupation</label>
+														<input type="text" name="occupation" id="occupation" class="form-control"  >
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">City</label>
+														<input type="text" name="city" id="city" class="form-control"  >
+													</div>
+												</div>
+											</div>
+										</div>
+									 
+										<div id="Branch_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Branch Name</label>
+														<select class="form-control" name="branchname" id="branchname" required>
+														<option value="">Select Branch Name</option>
+														<?php foreach($branch as $row):
+														echo'<option value="'.$row['branchname'].'"> '.$row['branchname'].'</option>';
+                                                        endforeach;
+														?>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Instructor Name</label>
+														<select class="form-control" name="instructorname" id="instructorname" required>
+																<option value="">Select Instructor Name</option>
+																 	<?php foreach($employee as $row):
+																		echo'<option value="'.$row['employeename'].'"> '.$row['employeename'].'</option>';
+																		endforeach;
+																	?>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label"> Program Time</label>
+														<select class="form-control" name="programtime" id="programtime" required>
+																<option value="">Select Program Time</option>
+																<option value="morning">Morning</option>
+																<option value="evening">Evening</option>
+															</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Joining Date</label>
+														<input type="date" name="joindate" id="joindate" class="form-control" required >
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Place</label>
+														<input type="text" name="place" id="place" class="form-control"  > 
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Membership</label>
+														<select class="form-control" name="member" id="member" required>
+																<option value="">Select Membership</option>
+																<option value="member">Member</option>
+																<option value="customer">Customer</option>
+															</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Program Joined For</label>
+														<select class="form-control" name="programname" id="programname" required>
+																<option value="">Select Program Joined For</option>
+																<?php foreach($program as $row):
+																		echo'<option value="'.$row['programname'].'"> '.$row['programname'].'</option>';
+																		endforeach;
+																	?>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Package Joined For</label>
+														<select class="form-control" name="package" id="package" required>
+																<option value="">Select Package Joined For</option>
+																 <option value="1 Month">1 Month</option>
+																<option value="2 Month">2 Month</option>
+																<option value="3 Month">3 Month</option>
+																<option value="4 Month">4 Month</option>
+																<option value="5 Month">5 Month</option>
+																<option value="6 Month">6 Month</option>
+																<option value="7 Month">7 Month</option>
+																<option value="8 Month">8 Month</option>
+																<option value="9 Month">9 Month</option>
+																<option value="10 Month">10 Month</option>
+																<option value="11 Month">11 Month</option>
+																<option value="12 Month">12 Month</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label"> Customer Status</label>
+														<select class="form-control" name="status" id="status" required>
+																<option value="">Select Status</option>
+																<option value="active">Active</option>
+																<option value="inactive">Inactive</option>
+																 
+																 
+															</select>
+													</div>
+												</div>
+												<div class="col-lg-2 mb-2"></div>
+													<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">References</label>
+														<select class="form-control" name="reference" id="reference" required>
+																<option value="">Select References</option>
+																<option value="articles">Articles</option>
+																<option value="websites">Websites</option>
+																<option value="social media">Social Media</option>
+																<option value="other">Other</option>
+															</select>
+													</div>
+												</div>
+											</div>
+											<br><br><br>
+									 </div>
+									 <div id="Medical_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Blood Group</label>
+														<input type="text" class="form-control" name="bloodgroup" id="bloodgroup"   >
+													</div>
+												</div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Height</label>
+														<input type="text" class="form-control" name="height" id="height"   >
+													</div>
+												</div>
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Weight</label>
+														<input type="text" class="form-control" name="weight" id="weight"  >
+													</div>
+												</div>
+											</div>
+											<div class="row ">
+												<label class="text-label">1.Have you ever or do you have any of the following</label></div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="heart" name="heart" value="Heart Disease">
+															<label class="form-check-label" for="check1">Heart Disease</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="asthma" name="asthma" value="Asthma">
+															<label class="form-check-label" for="check2">Asthma</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="gout" name="gout" value="Gout" >
+															<label class="form-check-label" for="check3">Gout</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="cardio" name="cardio" value="Cardiovascular condition">
+															<label class="form-check-label" for="check1">Cardiovascular condition</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="pressure" name="pressure" value="High/Low Blood Pressure">
+															<label class="form-check-label" for="check2">High/Low Blood Pressure</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="familyhx" name="familyhx" value="Family Hx of heart Disease" >
+															<label class="form-check-label" for="check3">Family Hx of heart Disease</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="dizziness" name="dizziness" value="Dizziness">
+															<label class="form-check-label" for="check1">Dizziness</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="arthritis" name="arthritis" value="Arthritis">
+															<label class="form-check-label" for="check2">Arthritis</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="infection" name="infection" value="Infectious Disease">
+															<label class="form-check-label" for="check3">Infectious Disease</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="blackouts" name="blackouts" value="Blackouts">
+															<label class="form-check-label" for="check1">Blackouts</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="diabetes" name="diabetes" value="Diabetes">
+															<label class="form-check-label" for="check2">Diabetes</label>
+														</div>
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="fainting" name="fainting" value="Fainting" >
+															<label class="form-check-label" for="check3">Fainting</label>
+														</div>
+													</div>
+												</div>
+										  
+												<div class="form-group">
+													<div class="row">
+														<div class="form-check mb-2 col-md-4">
+															<input type="checkbox" class="form-check-input" id="fits" name="fits" value="Epilepsy/Fits">
+															<label class="form-check-label" for="check1">Epilepsy/Fits</label>
+														</div>
+														<div class="form-check mb-2 col-md-6" style="float:left;">
+															<input type="checkbox" class="form-check-input" id="other" name="other" value="Other">
+															 
+															<label class="form-check-label" for="check2">Other:</label>
+															<input type="text" class="form-control" name="otherdesc" id="otherdesc" style="float:left;" >
+														</div>
+													</div>
+												</div>
+												
+												<div class="row ">
+													<label class="text-label">2.Do you have any problems/injuries in the follow areas?(please tick and explain to the best of your ability)</label></div>
+													<div class="form-group">
+														<div class="row">
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="knees" name="knees" value="Knees">
+																<label class="form-check-label" for="check1">Knees</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="lowerback" name="lowerback" value="Lower Back">
+																<label class="form-check-label" for="check2">Lower Back</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="neck" name="neck" value="Neck/Shoulder">
+																<label class="form-check-label" for="check1">Neck/Shoulder</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="hips" name="hips" value="Hips/Pelvis">
+																<label class="form-check-label" for="check1">Hips/Pelvis</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="flexibility" name="flexibility" value="Flexibility">
+																<label class="form-check-label" for="check1">Flexibility</label>
+															</div>
+															<div class="form-check mb-2 col-md-2">
+																<input type="checkbox" class="form-check-input" id="others" name="others" value="Others">
+																<label class="form-check-label" for="check1">Others</label>
+															</div>
+														</div>
+													</div>
+													<div class="row ">
+														<label class="text-label">3.Are you pregnant?</label></div>
+														<div class="form-group">
+															<div class="row">
+																<div class="form-check mb-2 col-md-3">
+																	<input type="checkbox" class="form-check-input" id="yes" name="yes" value="Yes">
+																	<label class="form-check-label" for="check1">Yes</label>
+																</div>
+																<div class="form-check mb-2 col-md-3">
+																	<input type="checkbox" class="form-check-input" id="no" name="no" value="No">
+																	<label class="form-check-label" for="check1">No</label>
+																</div>
+															</div>
+														</div>
+														<div class="row ">
+															<label class="text-label">If Yes how many weeks</label></div>
+															<div class="form-group">
+																<div class="form-check mb-4 col-md-3">
+																	<input type="text" class="form-control" name="weeks" id="weeks">
+																</div>
+															</div>
+												</div>
+										  
+										 
+												<div id="Medical_Details1" class="tab-pane" role="tabpanel">
+													<div class="row ">
+														<label class="text-label">4. Are you currently doing any physical activity,what and how many times per week?</label></div>
+														<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control" name="physical" id="physical">
+																</div>
+														</div>
+														<div class="row ">
+														<label class="text-label">5. Have you had surgery in the last 5 years,if yes,when and what?</label></div>
+														<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control"  name="surgery" id="surgery">
+																</div>
+														</div>
+														<div class="row ">
+														<label class="text-label">6. Do you smoke,if yes how many per day,and for how long have you smoked?</label></div>
+														<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control"  name="smoke" id="smoke">
+																</div>
+														</div>
+														<div class="row ">
+															<label class="text-label">7. Are you on any medication,if yes,what and when do you take?</label></div>
+															<div class="form-group">
+																<div class="form-check mb-6 col-md-8">
+																	<input type="text" class="form-control"  name="medication" id="medication">
+																</div>
+															</div><br>
+															
+												</div>
+										<div id="Fees_Details" class="tab-pane" role="tabpanel">
+											<div class="row">
+												<div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Total Amount</label>
+														<input type="text" name="totalamount" id="totalamount" class="form-control">
+													</div>
+												</div>
+												 <div class="col-lg-2 mb-2"></div>
+												 <div class="col-lg-4 mb-2">
+													<label>Paid Amount</label>
+													<input type="text"  class="form-control" id="paidamount" name="paidamount" >				
+												</div>
+											</div>
+											<div class="row">
+												 <div class="col-lg-4 mb-2">
+													<div class="form-group">
+														<label class="text-label">Pending Amount</label>
+														<input type="text" class="form-control" name="pendingamount" id="pendingamount"  >
+													</div>
+												</div>
+										 
+											</div>
+											<button type="submit" class="btn btn-primary" style="background:#dec53c;">Submit</button>
+										</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+         
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+</body>
+
+
+<!-- Mirrored from gymove.dexignzone.com/xhtml/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 07:21:00 GMT -->
+</html>
+        

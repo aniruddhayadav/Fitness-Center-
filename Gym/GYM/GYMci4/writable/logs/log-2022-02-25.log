@@ -1,0 +1,18 @@
+CRITICAL - 2022-02-25 07:11:26 --> syntax error, unexpected token ";", expecting ")"
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('siteFooter', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(10): view('siteFooter')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-25 07:12:09 --> syntax error, unexpected token ";", expecting ")"
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('siteFooter', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(10): view('siteFooter')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

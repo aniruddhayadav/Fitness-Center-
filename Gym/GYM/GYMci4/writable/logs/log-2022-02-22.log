@@ -1,0 +1,48 @@
+CRITICAL - 2022-02-22 06:26:31 --> Invalid file: calender.php
+#0 D:\wamp\www\testing\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('calender.php')
+#1 D:\wamp\www\testing\system\Common.php(1089): CodeIgniter\View\View->render('calender', Array, true)
+#2 D:\wamp\www\testing\app\Controllers\Home.php(12): view('calender')
+#3 D:\wamp\www\testing\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\wamp\www\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\wamp\www\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp\www\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 06:32:22 --> include(header.php): failed to open stream: No such file or directory
+#0 D:\wamp\www\testing\app\Views\demo.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header....', 'D:\\wamp\\www\\tes...', 1, Array)
+#1 D:\wamp\www\testing\app\Views\demo.php(1): include()
+#2 D:\wamp\www\testing\system\View\View.php(210): include('D:\\wamp\\www\\tes...')
+#3 D:\wamp\www\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\wamp\www\testing\system\Common.php(1089): CodeIgniter\View\View->render('demo', Array, true)
+#5 D:\wamp\www\testing\app\Controllers\Home.php(12): view('demo')
+#6 D:\wamp\www\testing\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#7 D:\wamp\www\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp\www\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-22 06:42:45 --> Invalid file: gymForm.php
+#0 D:\wamp\www\testing\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymForm.php')
+#1 D:\wamp\www\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm', Array, true)
+#2 D:\wamp\www\testing\app\Controllers\Home.php(10): view('gymForm')
+#3 D:\wamp\www\testing\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\wamp\www\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\wamp\www\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp\www\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 06:42:56 --> Invalid file: gymForm.php
+#0 D:\wamp\www\testing\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymForm.php')
+#1 D:\wamp\www\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm', Array, true)
+#2 D:\wamp\www\testing\app\Controllers\Home.php(10): view('gymForm')
+#3 D:\wamp\www\testing\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\wamp\www\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\wamp\www\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp\www\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-22 06:42:56 --> Invalid file: gymForm.php
+#0 D:\wamp\www\testing\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymForm.php')
+#1 D:\wamp\www\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm', Array, true)
+#2 D:\wamp\www\testing\app\Controllers\Home.php(10): view('gymForm')
+#3 D:\wamp\www\testing\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\wamp\www\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\wamp\www\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\wamp\www\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

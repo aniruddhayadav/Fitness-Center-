@@ -1,0 +1,161 @@
+CRITICAL - 2022-02-23 12:48:30 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:31 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:33 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:40 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:49:40 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:50:50 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:51:47 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:51:50 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 12:52:15 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xamp serv\htdocs\testing\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xamp serv\htdocs\testing\public\index.php(28): require('D:\\xamp serv\\ht...')
+#4 {main}
+CRITICAL - 2022-02-23 06:54:33 --> include(connection.php): Failed to open stream: No such file or directory
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(connect...', 'D:\\xamp serv\\ht...', 2)
+#1 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(2): include()
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#3 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#5 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#8 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-23 06:55:30 --> Undefined array key "est_date"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 4)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 06:55:31 --> Undefined array key "est_date"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 4)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 06:55:31 --> Undefined array key "est_date"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 4)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 06:56:04 --> Undefined array key "gym_name"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 6)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 06:56:38 --> Undefined array key "est_date"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 4)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 06:57:29 --> Undefined array key "gym_name"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 6)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-23 07:10:50 --> Undefined array key "gym_name"
+#0 D:\xamp serv\htdocs\testing\app\Views\gymForm_backend.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xamp serv\\ht...', 6)
+#1 D:\xamp serv\htdocs\testing\system\View\View.php(210): include('D:\\xamp serv\\ht...')
+#2 D:\xamp serv\htdocs\testing\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xamp serv\htdocs\testing\system\Common.php(1089): CodeIgniter\View\View->render('gymForm_backend', Array, true)
+#4 D:\xamp serv\htdocs\testing\app\Controllers\Test.php(10): view('gymForm_backend')
+#5 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(825): App\Controllers\Test->index()
+#6 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 D:\xamp serv\htdocs\testing\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xamp serv\htdocs\testing\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

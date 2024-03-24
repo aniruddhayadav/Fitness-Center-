@@ -1,0 +1,167 @@
+ <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                 
+                <!-- row -->
+                <div class="row">
+
+					<div class="col-xl-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Add Gym Master</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                     <form action="<?php echo base_url('/GymMaster/save')?>" method="POST" enctype="multipart/form-data">
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label> Gym Name</label>
+                                                <input type="text" name="gymname" id="gymname" class="form-control" required >
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Owner Name</label>
+                                                <input type="text" name="ownername" id="ownername" class="form-control" required  >
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Landline No</label>
+                                                <input type="text" name="landline" id="landline" class="form-control">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Mobile No</label>
+                                                <input type="text" name="phoneno" id="phoneno" class="form-control" required  >
+                                            </div>
+										</div>
+										<div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label>Email1</label>
+                                                <input type="email" name="emailone" id="emailone" class="form-control" required>
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Email2</label>
+                                                <input type="email" name="emailtwo" id="emailtwo" class="form-control">
+                                            </div>
+										</div>
+										<div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label>Billing Address</label><hr>
+												<label>Address</label>
+                                                <input type="text" name="billingaddress" id="billingaddress" class="form-control">
+												<label>City</label>
+                                                <input type="text" name="billingcity" id="billingcity" class="form-control">
+												<label>Pincode</label>
+                                                <input type="text" name="billingpincode" id="billingpincode" class="form-control">
+												<label>State</label>
+                                                <input type="text" name="billingstate" id="billingstate" class="form-control">
+												<label>Country</label>
+                                                <input type="text" name="billingcountry" id="billingcountry" class="form-control"><br>
+												<div class="form-group col-md-8">
+												<!--<input type="checkbox" class="form-check-input" id="check1">-->
+												<p id="shiptobilling" class="form-row">
+													Same as Billing&emsp; <input type="checkbox" onclick="SetBilling(this.checked);" /> 
+												</p>
+												</div>			<!--<label class="form-check-label" for="check1">Same as Billing Address</label></div>
+												<!--<button type="submit" class="btn btn-primary">Same as Billing Address</button>-->
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Shipping Address</label><hr style="color:black;">
+                                                <label>Address</label>
+												<input type="text" name="shippingaddress" id="shippingaddress" class="form-control">
+												<label>City</label>
+                                                <input type="text" name="shippingcity" id="shippingcity" class="form-control">
+												<label>Pincode</label>
+                                                <input type="text" name="shippingpincode" id="shippingpincode" class="form-control">
+												<label>State</label>
+                                                <input type="text" name="shippingstate" id="shippingstate" class="form-control">
+												<label>Country</label>
+                                                <input type="text" name="shippingcountry" id="shippingcountry" class="form-control">
+											</div>
+										</div><hr>
+										<div class="form-row"> 
+											<div class="form-group col-md-4">
+                                                <label>GST No</label>
+                                                <input type="text" name="gstno" id="gstno" class="form-control">
+											</div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+											<label>GST File</label>
+											<input type="file" class="form-control" id="gstimage" name="gstimage" placeholder=" Upload Image Here" style="width:100%;"  >
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Registration No</label>
+                                                <input type="text" name="regno" id="regno" class="form-control">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+												<label>Registration File</label>
+                                               <input type="file"     class="form-control" id="regimage" name="regimage" placeholder=" Upload Image Here" style="width:100%;" > 
+                                            </div>
+                                        </div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>PAN No</label>
+                                                <input type="text" name="panno" id="panno" class="form-control">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+											<label>PAN No File</label>
+                                               <input type="file"   class="form-control" id="panimage" name="panimage" placeholder=" Upload Image Here" style="width:100%;" > 
+                                            </div>
+                                        </div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                               <label>Awards/Certification</label>
+                                                <input type="text" name="award" id="award" class="form-control">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+												<label></label>
+                                               <input type="file"    class="form-control" id="awardimage" name="awardimage" placeholder=" Upload Image Here" style="width:100%;" > 
+                                            </div>
+                                        </div>
+								   
+                                        <button type="submit" class="btn btn-primary" style="background:#dec53c;">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!--**********************************
+            Content body end
+        ***********************************-->
+
+<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript">
+function SetBilling(checked) {
+    if (checked) {
+        document.getElementById('shippingaddress').value = document.getElementById('billingaddress').value; 
+		document.getElementById('shippingcity').value = document.getElementById('billingcity').value; 
+		document.getElementById('shippingpincode').value = document.getElementById('billingpincode').value;
+		document.getElementById('shippingstate').value = document.getElementById('billingstate').value;
+		document.getElementById('shippingcountry').value = document.getElementById('billingcountry').value;
+    } else {
+        document.getElementById('shippingaddress').value = ''; 
+		document.getElementById('shippingcity').value = ''; 
+		document.getElementById('shippingpincode').value = ''; 
+		document.getElementById('shippingstate').value = ''; 
+		document.getElementById('shippingcountry').value = ''; 
+    }
+}
+</script>
+
+
+        

@@ -1,0 +1,33 @@
+CRITICAL - 2022-04-13 08:03:51 --> Undefined variable $master
+#0 C:\xampp\htdocs\GYM\GYMci4\app\Views\Admin\Add.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/Add.php', Array, true)
+#4 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(12): view('Admin/Add.php')
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 08:11:00 --> Undefined variable $master
+#0 C:\xampp\htdocs\GYM\GYMci4\app\Views\Admin\Add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/Add.php', Array, true)
+#4 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(12): view('Admin/Add.php')
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-13 08:13:21 --> Undefined variable $master
+#0 C:\xampp\htdocs\GYM\GYMci4\app\Views\Admin\Add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/Add.php', Array, true)
+#4 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(12): view('Admin/Add.php')
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

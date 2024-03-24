@@ -1,0 +1,36 @@
+CRITICAL - 2022-02-26 06:12:47 --> Invalid file: gymIndex.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymIndex.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('gymIndex', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(11): view('gymIndex')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-26 06:26:37 --> Invalid file: gymFooter.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymFooter.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('gymFooter', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(12): view('gymFooter')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-26 06:27:45 --> Invalid file: gymFooter.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymFooter.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('gymFooter', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(12): view('gymFooter')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-26 06:32:40 --> Invalid file: gymHome.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gymHome.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('gymHome', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Home.php(11): view('gymHome')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

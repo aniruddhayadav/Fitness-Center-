@@ -1,0 +1,9 @@
+CRITICAL - 2022-02-27 08:59:58 --> Invalid file: Team.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Team.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Team', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\Team.php(11): view('Team')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Team->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Team))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\GYMci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

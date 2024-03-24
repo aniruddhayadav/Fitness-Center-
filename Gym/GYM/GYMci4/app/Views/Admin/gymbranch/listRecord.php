@@ -1,0 +1,79 @@
+ 
+  <div class="content-body">
+      <div class="page-breadcrumb">
+           <div class="row">
+                <div class="col-5 align-self-center">
+                     <h4 class="page-title"  style="color:white !important; margin-top:40px; font-weight:1000;">Gym Location List</h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                            </nav>
+                        </div>
+                 </div>
+                 <div class="col-7 align-self-center">
+                     <div class="d-flex no-block justify-content-end align-items-center">
+                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('/GymBranch')?>" aria-expanded="false">
+							<button class="btn btn-primary sw-btn-next" type="button" style="margin-right:50px; background:#dec53c; border-color:#dec53c;">Add GymBranch</button>
+                         </a>
+					</div>
+                 </div>
+           </div>
+       </div>
+       <div class="container-fluid">
+                 
+                <!-- row -->
+				<div class="row">
+					<div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="file_export" class="table table-bordered table-responsive-sm">
+                                        <thead>
+                                            <tr>
+											
+                                                <th>Action</th>
+												<th>ID</th>
+                                                <th>Branch Name</th>
+                                                <th>Owner Name</th>
+                                                <th>Branch Address</th>
+                                                <th>Email</th>
+												<th>Landline</th>
+												<th>Phone No</th>
+                                                <th>City </th>
+												<th>Pincode</th>
+												<th>State</th>
+												<th>Country</th>
+												 
+                                            </tr>
+                                        </thead>
+										 <tbody>
+											<?php foreach($BranchData as $row): 
+												echo "<tr>";
+													echo '<td>
+														<a href="'.base_url().'/GymBranch/edit/'.$row["id"].'" class="btn btn-primary" data-toggle="tooltip" title="Edit GymBranch" style="padding:3px;background:#dec53c;"><i class="fa fa-pencil" aria-hidden="true"  style="color:black;"></i></a>
+														<a href="'.base_url().'/GymBranch/delete/'.$row["id"].'" class="btn btn-primary" title="Delete GymBranch" data-toggle="tooltip" style="padding:3px;background:#dec53c;"><i class="fa fa-trash" aria-hidden="true"  style="color:black;"></i></a>
+													</td>';
+                                              
+													echo  "<td>".$row['id']."</td>"; 		
+													echo  "<td>".$row['branchname']."</td>";											 
+													echo  "<td>".$row['ownername']."</td>";
+													echo  "<td>".$row['branchaddress']."</td>";
+													echo  "<td>".$row['email']."</td>";
+													echo  "<td>".$row['landline']."</td>";
+													echo  "<td>".$row['phoneno']."</td>";
+													echo  "<td>".$row['city']."</td>";
+													echo  "<td>".$row['pincode']."</td>";
+													echo  "<td>".$row['state']."</td>";
+													echo  "<td>".$row['country']."</td>";
+											   echo "</tr>";
+											endforeach; ?>
+										</tbody>
+                                    </table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		 

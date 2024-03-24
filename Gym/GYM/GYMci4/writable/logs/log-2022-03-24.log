@@ -1,0 +1,45 @@
+CRITICAL - 2022-03-24 07:30:12 --> Invalid file: Login.php
+#0 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Login.php')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Login', Array, true)
+#2 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Login.php(10): view('Login')
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 07:30:32 --> Invalid file: Login.php
+#0 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Login.php')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Login', Array, true)
+#2 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Login.php(10): view('Login')
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 07:30:34 --> Invalid file: Login.php
+#0 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Login.php')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Login', Array, true)
+#2 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Login.php(10): view('Login')
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#4 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 07:57:31 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 C:\xampp\htdocs\GYM\GYMci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Add')
+#1 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Add')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-24 07:58:41 --> Undefined variable $master
+#0 C:\xampp\htdocs\GYM\GYMci4\app\Views\Admin\Add.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/add.php', Array, true)
+#4 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\Add.php(10): view('Admin/add.php')
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\Add->index()
+#6 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Add))
+#7 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

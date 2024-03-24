@@ -1,0 +1,63 @@
+CRITICAL - 2022-03-01 06:40:03 --> Invalid file: header.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(8): view('header')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:40:28 --> Invalid file: header.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(8): view('header')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:41:38 --> Invalid file: header.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(8): view('header')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:47:36 --> Invalid file: header.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(8): view('header')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:50:34 --> Invalid file: footer.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footer.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('footer', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(10): view('footer')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:51:08 --> Invalid file: footer.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footer.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('footer', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(10): view('footer')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 06:51:37 --> Invalid file: footer.php
+#0 D:\xamp serv\htdocs\GYM\GYMci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footer.php')
+#1 D:\xamp serv\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('footer', Array, true)
+#2 D:\xamp serv\htdocs\GYM\GYMci4\app\Controllers\AboutUs.php(10): view('footer')
+#3 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\AboutUs->index()
+#4 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AboutUs))
+#5 D:\xamp serv\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xamp serv\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

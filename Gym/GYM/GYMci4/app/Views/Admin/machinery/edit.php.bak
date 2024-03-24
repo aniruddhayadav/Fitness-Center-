@@ -1,0 +1,175 @@
+ <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                 
+                <!-- row -->
+                <div class="row">
+
+					<div class="col-xl-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Add Gym Machinery</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                    <form action="<?php echo base_url('MachineryUpdate')?>"  method="POST" enctype="multipart/form-data">
+										<div class="form-row">
+										<div class="form-group col-md-4">
+                                                <label>ID</label>
+                                                <input type="text" name="id" id="id" class="form-control" readonly value="<?php echo $editData['id'];?>">
+                                            </div>
+											</div>
+                                        <div class="form-row">
+										
+                                            <div class="form-group col-md-4">
+                                                <label>Machine/Asset Name</label>
+                                                <input type="text" name="machinename" id="machinename" class="form-control"   value="<?php echo $editData['machinename'];?>">
+                                            </div>
+											 <div class="form-group col-md-2"></div>
+											 <div class="form-group col-md-4">
+                                                <label>Machine/Asset Serial No</label>
+                                                <input type="text" name="machineno" id="machineno" class="form-control"   value="<?php echo $editData['machineno'];?>">
+                                            </div>
+										</div>
+										<div class="form-row">
+											 <div class="form-group col-md-4">
+                                                <label>Brand/Make</label>
+                                                <input type="text" name="brand" id="brand" class="form-control"   value="<?php echo $editData['brand'];?>">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Branch Name</label>
+                                               		<select class="form-control" data-placeholder="Enter Branch Name" tabindex="1" id=" branchname"  name="branchname" >
+                                                       <option value="">Select Branch Name</option>
+														<?php foreach($branchData as $row):
+														if ($row['branchname'] == $editData['branchname'])
+															{
+																echo'<option value="'.$row['branchname'].'" selected="selected"> '.$row['branchname'].'</option>';
+																
+																}
+														else
+														{
+															echo'<option value="'.$row['branchname'].'"> '.$row['branchname'].'</option>';
+														}
+														
+                                                        endforeach;
+														?>
+                                                     </select>
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Purchase Cost</label>
+                                                <input type="text" name="purchasecost" id="purchasecost" class="form-control" value="<?php echo $editData['purchasecost'];?>">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Purchase Date</label>
+                                                <input type="date" name="date" id="date" class="form-control" value="<?php echo $editData['date'];?>">
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Machine Type</label>
+                                                <select class="form-control form-control-lg default-select" name="machinetype" id="machinetype" required>
+													<option value=" Select Machine Type"> Select Machine Type</option>
+												<option value="Dizital/Intanzible Purchase" <?php if($editData['machinetype'] == "Dizital/Intanzible Purchase"){ echo ' selected="selected"'; } ?>>Dizital/Intanzible Purchase</option>
+												<option value="Fixed Purchase" <?php if($editData['machinetype'] == "Fixed Purchase"){ echo ' selected="selected"'; } ?>>Fixed Purchase</option>
+												<option value="Movable Purchase" <?php if($editData['machinetype'] == "Movable Purchase"){ echo ' selected="selected"'; } ?>>Movable Purchase</option>
+																
+													 
+												</select>
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Purchase Type</label>
+                                                <select class="form-control form-control-lg default-select" name="purchasetype" id="purchasetype" required>
+													<option value=" Select Purchase Type">Select Purchase Type</option>
+													<option value="EMI" <?php if($editData['purchasetype'] == "EMI"){ echo ' selected="selected"'; } ?>>EMI</option>
+												     <option value="Prepaid" <?php if($editData['purchasetype'] == "Prepaid"){ echo ' selected="selected"'; } ?>>Prepaid</option>
+												
+													 
+												</select>
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Purchase No</label>
+                                                <input type="text" name="purchaseno" id="purchaseno" class="form-control" value="<?php echo $editData['purchaseno'];?>">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Have Insurance</label>
+                                                 <select class="form-control form-control-lg default-select" name="insurance" id="insurance">
+													<option value="Have Insurance">Have Insurance</option>
+													<option value="Yes" <?php if($editData['insurance'] == "Yes"){ echo ' selected="selected"'; } ?>>Yes</option>
+												<option value="No" <?php if($editData['insurance'] == "No"){ echo ' selected="selected"'; } ?>>No</option>
+												
+													 
+												</select>
+                                            </div>
+                                        </div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Insurance No</label>
+                                                <input type="text" name="insuranceno" id="insuranceno" class="form-control" value="<?php echo $editData['insuranceno'];?>">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Insurance Name</label>
+                                                <input type="text" name="insurancename" id="insurancename" class="form-control" value="<?php echo $editData['insurancename'];?>">
+                                            </div>
+										</div>
+										<div class="form-row">
+											 <div class="form-group col-md-4">
+                                                <label>Insurance Purchase Date</label>
+                                                <input type="date" name="purchasedate" id="purchasedate" class="form-control" value="<?php echo $editData['purchasedate'];?>">
+                                            </div>
+											<div class="form-group col-md-2"></div>
+											<div class="form-group col-md-4">
+                                                <label>Insurance Renew Date</label>
+                                                <input type="date" name="renewdate" id="renewdate" class="form-control" value="<?php echo $editData['renewdate'];?>" >
+                                            </div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-4">
+                                                <label>Depreciation</label>
+                                                <input type="text" name="depreciation" id="depreciation" class="form-control" value="<?php echo $editData['depreciation'];?>">
+                                            </div>
+										</div>
+										<div class="form-row" id="add_sub_machine">
+											<div class="form-group col-md-3">
+												<label>Sub Machine Name</label>
+												<input type="text" name="subname[]" id="subname" class="form-control" value="<?php echo $editData['subname[]'];?>">
+											</div>
+											<div class="form-group col-md-3">
+												 <label>Quantity</label>
+												<input type="text" name="quantity[]" id="quantity" class="form-control" value="<?php echo $editData['quantity[]'];?>">
+											 </div>
+											 <div class="form-group col-md-3">
+												 <label>Purchase Cost</label>
+												<input type="text" name="cost[]" id="cost" class="form-control" value="<?php echo $editData['cost[]'];?>">
+											 </div>
+											 <div class="form-group col-md-1">
+												<button type="button" class="btn btn-primary plusBtn"><i class="fa fa-plus"></i></button>
+											 </div>
+										</div>
+										<button type="submit" class="btn btn-primary" style="background:#dec53c;">Submit</button>
+									</form>
+								</div>
+                             </div>
+                           </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!--**********************************
+            Content body end
+        ***********************************-->
+
+
+         

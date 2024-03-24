@@ -1,0 +1,35 @@
+CRITICAL - 2022-04-21 07:28:00 --> syntax error, unexpected token "<", expecting end of file
+#0 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-21 07:28:02 --> syntax error, unexpected token "<", expecting end of file
+#0 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-21 07:28:10 --> syntax error, unexpected token "<", expecting end of file
+#0 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-21 07:28:39 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-21 07:29:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-21 07:29:20 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-21 08:07:21 --> Undefined variable $BranchData
+#0 C:\xampp\htdocs\GYM\GYMci4\app\Views\Admin\Branch\listRecord.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\GYM\GYMci4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\GYM\GYMci4\system\Common.php(1089): CodeIgniter\View\View->render('Admin/Branch/li...', Array, true)
+#4 C:\xampp\htdocs\GYM\GYMci4\app\Controllers\GymBranch.php(63): view('Admin/Branch/li...', Array)
+#5 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(825): App\Controllers\GymBranch->listRecord()
+#6 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GymBranch))
+#7 C:\xampp\htdocs\GYM\GYMci4\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GYM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
